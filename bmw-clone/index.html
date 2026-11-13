@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BMW France Official Website | New & Used Cars</title>
+  <meta name="description" content="Welcome to the official BMW France website: Explore premium vehicles, exclusive offers, electric mobility, and innovative technologies.">
+
+  <!-- Preconnect and Google Font (Outfit weights 300 and 500) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <!-- Preload Critical Hero Poster Asset -->
+  <link rel="preload" as="image" href="./assets/hero.jpg">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       1. Header & Navigation Bar
+       ========================================================================= -->
+  <header class="header" role="banner">
+    <div class="header__container">
+      
+      <!-- Left: Logo & Navigation Items -->
+      <div class="header__left">
+        <a href="https://www.bmw.fr/fr/accueil.html" class="header__logo-link" aria-label="BMW France Homepage" rel="noopener">
+          <img src="./assets/bmw-logo.png" alt="BMW Logo" class="header__logo-img" width="44" height="44">
+        </a>
+
+        <nav class="header__nav" aria-label="Main Navigation">
+          <ul class="nav__list" role="menubar">
+            
+            <li class="nav__item" role="none">
+              <a href="https://www.bmw.fr/fr/tous-les-modeles.html" class="nav__link" role="menuitem" rel="noopener">Models</a>
+            </li>
+
+            <!-- Buy Mega Menu (4 Columns) -->
+            <li class="nav__item nav__item--has-menu" role="none">
+              <button class="nav__btn" aria-haspopup="true" aria-expanded="false" role="menuitem">
+                <span>Buy</span>
+                <svg class="nav__chevron" viewBox="0 0 12 12" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="2 4 6 8 10 4"></polyline>
+                </svg>
+              </button>
+              
+              <div class="mega-menu" role="menu" aria-label="Buy Submenu">
+                <div class="mega-menu__container">
+                  <!-- Col 1: Models & Configurator -->
+                  <div class="mega-menu__col">
+                    <h4 class="mega-menu__col-title">Models & Configurator</h4>
+                    <ul class="mega-menu__list">
+                      <li><a href="https://configure.bmw.fr/fr_FR/configure" class="mega-menu__link" rel="noopener">Configure your BMW</a></li>
+                      <li><a href="https://www.bmw.fr/fr/tous-les-modeles.html" class="mega-menu__link" rel="noopener">New BMWs available</a></li>
+                      <li><a href="https://www.bmw.fr/fr/tous-les-modeles.html" class="mega-menu__link" rel="noopener">Used BMWs available</a></li>
+                      <li><a href="https://www.bmw.fr/fr/tous-les-modeles.html" class="mega-menu__link" rel="noopener">Compare BMW models</a></li>
+                      <li><a href="https://www.bmw.fr/fr/tous-les-modeles.html" class="mega-menu__link" rel="noopener">Trade-in of your vehicle</a></li>
+                    </ul>
+                  </div>
+                  <!-- Col 2: Advice & Business -->
+                  <div class="mega-menu__col">
+                    <h4 class="mega-menu__col-title">Advice & Business</h4>
+                    <ul class="mega-menu__list">
+                      <li><a href="https://www.bmw.fr/fr/fastlane/dealer-locator.html" class="mega-menu__link" rel="noopener">Find your BMW partner</a></li>
+                      <li><a href="https://www.bmw.fr/fr/plus-de-bmw/customer-support.html" class="mega-menu__link" rel="noopener">Request a quote</a></li>
+                      <li><a href="https://www.bmw.fr/fr/tous-les-modeles/demande-essai.html" class="mega-menu__link" rel="noopener">Book your test drive</a></li>
+                      <li><a href="https://www.bmw.fr/fr/topics/offres-et-financement.html" class="mega-menu__link" rel="noopener">BMW for Professionals</a></li>
+                    </ul>
+                  </div>
+                  <!-- Col 3: Digital Services & Accessories -->
+                  <div class="mega-menu__col">
+                    <h4 class="mega-menu__col-title">Digital Services & Accessories</h4>
+                    <ul class="mega-menu__list">
+                      <li><a href="https://www.bmw.fr/fr/shop/ls/cp/connected-drive" class="mega-menu__link" rel="noopener">BMW ConnectedDrive</a></li>
+                      <li><a href="https://www.bmw.fr/fr/shop/ls/cp/connected-drive" class="mega-menu__link" rel="noopener">Connected Drive store</a></li>
+                      <li><a href="https://www.bmw.fr/fr/topics/offres-et-services/accessoires.html" class="mega-menu__link" rel="noopener">BMW Accessories</a></li>
+                      <li><a href="https://www.bmw.fr/fr/topics/offres-et-services/accessoires.html" class="mega-menu__link" rel="noopener">BMW Lifestyle Boutique</a></li>
+                    </ul>
+                  </div>
+                  <!-- Col 4: Leasing & Financing -->
+                  <div class="mega-menu__col">
+                    <h4 class="mega-menu__col-title">Leasing & Financing</h4>
+                    <ul class="mega-menu__list">
+                      <li><a href="https://www.bmw.fr/fr/tous-les-modeles/offres.html" class="mega-menu__link" rel="noopener">Exclusive BMW offers</a></li>
+                      <li><a href="https://www.bmw.fr/fr/topics/offres-et-financement.html" class="mega-menu__link" rel="noopener">Long-term lease offers</a></li>
+                      <li><a href="https://www.bmw.fr/fr/topics/offres-et-financement.html" class="mega-menu__link" rel="noopener">BMW Financial Services</a></li>
+                      <li><a href="https://www.bmw.fr/fr/topics/offres-et-financement.html" class="mega-menu__link" rel="noopener">BMW Insurance</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <!-- Electric Range Mega Menu (2 Groups / 4 Cols) -->
+            <li class="nav__item nav__item--has-menu" role="none">
+              <button class="nav__btn" aria-haspopup="true" aria-expanded="false" role="menuitem">
+                <span>Electric range</span>
+                <svg class="nav__chevron" viewBox="0 0 12 12" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="2 4 6 8 10 4"></polyline>
+                </svg>
+              </button>
+
+              <div class="mega-menu" role="menu" aria-label="Electric Range Submenu">
+                <div class="mega-menu__container">
+                  <!-- Col 1 & 2: Electric cars -->
+                  <div class="mega-menu__col">
+                    <h4 class="mega-menu__col-title">Electric cars</h4>
+                    <ul class="mega-menu__list">
+                      <li><a href="https://www.bmw.fr/fr/tous-les-modeles.html" class="mega-menu__link" rel="noopener">BMW electric vehicles</a></li>
+                      <li><a href="https://www.bmw.fr/fr/tous-les-modeles/3-series/berline/bmw-i3-berline.html" class="mega-menu__link" rel="noopener">New BMW i3 Sedan</a></li>
+                      <li><a href="https://www.bmw.fr/fr/tous-les-modeles/x-series/suv/bmw-ix5.html" class="mega-menu__link" rel="noopener">New BMW iX5</a></li>
+                      <li><a href="https://www.bmw.fr/fr/tous-les-modeles/x-series/suv/bmw-ix4.html" class="mega-menu__link" rel="noopener">New BMW iX4</a></li>
+                    </ul>
+                  </div>
+                  <div class="mega-menu__col">
+                    <h4 class="mega-menu__col-title">Range & Innovation</h4>
+                    <ul class="mega-menu__list">
+                      <li><a href="https://www.bmw.fr/fr/tous-les-modeles.html" class="mega-menu__link" rel="noopener">BMW plug-in hybrids</a></li>
+                      <li><a href="https://www.bmw.fr/fr/tous-les-modeles.html" class="mega-menu__link" rel="noopener">Electric range up to 912 km</a></li>
+                      <li><a href="https://www.bmw.fr/fr/tous-les-modeles.html" class="mega-menu__link" rel="noopener">Cost of electric cars</a></li>
+                    </ul>
+                  </div>
+                  <!-- Col 3 & 4: Charging & Range -->
+                  <div class="mega-menu__col">
+                    <h4 class="mega-menu__col-title">Charging & Range</h4>
+                    <ul class="mega-menu__list">
+                      <li><a href="https://www.bmw.fr/fr/topics/univers/electromobilite/recharge-publique.html" class="mega-menu__link" rel="noopener">Public charging network</a></li>
+                      <li><a href="https://www.bmw.fr/fr/topics/univers/electromobilite/recharge-a-domicile.html" class="mega-menu__link" rel="noopener">Home charging solutions</a></li>
+                      <li><a href="https://www.bmw.fr/fr/topics/univers/electromobilite.html" class="mega-menu__link" rel="noopener">BMW Charging card</a></li>
+                    </ul>
+                  </div>
+                  <div class="mega-menu__col">
+                    <h4 class="mega-menu__col-title">Electric FAQ & Advice</h4>
+                    <ul class="mega-menu__list">
+                      <li><a href="https://www.bmw.fr/fr/topics/univers/electromobilite.html" class="mega-menu__link" rel="noopener">Electric driving tips</a></li>
+                      <li><a href="https://www.bmw.fr/fr/topics/univers/electromobilite.html" class="mega-menu__link" rel="noopener">Battery recycling & longevity</a></li>
+                      <li><a href="https://www.bmw.fr/fr/topics/univers/electromobilite.html" class="mega-menu__link" rel="noopener">Government eco-bonus info</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <!-- Services Mega Menu (4 Columns) -->
+            <li class="nav__item nav__item--has-menu" role="none">
+              <button class="nav__btn" aria-haspopup="true" aria-expanded="false" role="menuitem">
+                <span>Services</span>
+                <svg class="nav__chevron" viewBox="0 0 12 12" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="2 4 6 8 10 4"></polyline>
+                </svg>
+              </button>
+
+              <div class="mega-menu" role="menu" aria-label="Services Submenu">
+                <div class="mega-menu__container">
+                  <!-- Col 1: Services & Contracts -->
+                  <div class="mega-menu__col">
+                    <h4 class="mega-menu__col-title">Services & Contracts</h4>
+                    <ul class="mega-menu__list">
+                      <li><a href="https://www.bmw.fr/fr/topics/offres-et-services/rendez-vous-en-ligne.html" class="mega-menu__link" rel="noopener">Schedule an appointment for a check-up</a></li>
+                      <li><a href="https://www.bmw.fr/fr/topics/offres-et-services.html" class="mega-menu__link" rel="noopener">BMW Service Inclusive</a></li>
+                      <li><a href="https://www.bmw.fr/fr/topics/offres-et-services.html" class="mega-menu__link" rel="noopener">Guarantees & Extended warranty</a></li>
+                      <li><a href="https://www.bmw.fr/fr/topics/offres-et-services.html" class="mega-menu__link" rel="noopener">Maintenance recommendations</a></li>
+                    </ul>
+                  </div>
+                  <!-- Col 2: Service & Assistance -->
+                  <div class="mega-menu__col">
+                    <h4 class="mega-menu__col-title">Service & Assistance</h4>
+                    <ul class="mega-menu__list">
+                      <li><a href="https://www.bmw.fr/fr/plus-de-bmw/customer-support.html" class="mega-menu__link" rel="noopener">Customer service & FAQ</a></li>
+                      <li><a href="https://www.bmw.fr/fr/plus-de-bmw/customer-support.html" class="mega-menu__link" rel="noopener">24/7 Roadside Assistance</a></li>
+                      <li><a href="https://www.bmw.fr/fr/topics/offres-et-services.html" class="mega-menu__link" rel="noopener">Takata airbag recall campaign</a></li>
+                      <li><a href="https://www.bmw.fr/fr/topics/offres-et-services.html" class="mega-menu__link" rel="noopener">Technical reminders and updates</a></li>
+                    </ul>
+                  </div>
+                  <!-- Col 3: Connected Services & Apps -->
+                  <div class="mega-menu__col">
+                    <h4 class="mega-menu__col-title">Connected Services & Apps</h4>
+                    <ul class="mega-menu__list">
+                      <li><a href="https://www.bmw.fr/fr/topics/univers/my-bmw-app.html" class="mega-menu__link" rel="noopener">MY BMW App</a></li>
+                      <li><a href="https://www.bmw.fr/fr/shop/ls/cp/connected-drive" class="mega-menu__link" rel="noopener">Remote Software Upgrade</a></li>
+                      <li><a href="https://www.bmw.fr/fr/topics/univers/my-bmw-app.html" class="mega-menu__link" rel="noopener">Application Driver's Guide</a></li>
+                      <li><a href="https://www.bmw.fr/fr/shop/ls/cp/connected-drive" class="mega-menu__link" rel="noopener">BMW Digital Key</a></li>
+                    </ul>
+                  </div>
+                  <!-- Col 4: Recall Campaigns -->
+                  <div class="mega-menu__col">
+                    <h4 class="mega-menu__col-title">Recall Campaigns</h4>
+                    <ul class="mega-menu__list">
+                      <li><a href="https://www.bmw.fr/fr/topics/offres-et-services.html" class="mega-menu__link" rel="noopener">Takata airbag recall check</a></li>
+                      <li><a href="https://www.bmw.fr/fr/topics/offres-et-services.html" class="mega-menu__link" rel="noopener">Vehicle safety updates</a></li>
+                      <li><a href="https://www.bmw.fr/fr/fastlane/dealer-locator.html" class="mega-menu__link" rel="noopener">Contact dealer for inspection</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <!-- Brand Mega Menu (4 Columns) -->
+            <li class="nav__item nav__item--has-menu" role="none">
+              <button class="nav__btn" aria-haspopup="true" aria-expanded="false" role="menuitem">
+                <span>Brand</span>
+                <svg class="nav__chevron" viewBox="0 0 12 12" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="2 4 6 8 10 4"></polyline>
+                </svg>
+              </button>
+
+              <div class="mega-menu" role="menu" aria-label="Brand Submenu">
+                <div class="mega-menu__container">
+                  <!-- Col 1: Brand & Company -->
+                  <div class="mega-menu__col">
+                    <h4 class="mega-menu__col-title">Brand & Company</h4>
+                    <ul class="mega-menu__list">
+                      <li><a href="https://www.bmwgroup.com" class="mega-menu__link" target="_blank" rel="noopener">The BMW Group</a></li>
+                      <li><a href="https://www.bmw.fr/fr/topics/univers/concept-cars.html" class="mega-menu__link" rel="noopener">Vision Neue Klasse</a></li>
+                      <li><a href="https://www.bmw.fr/fr/topics/univers.html" class="mega-menu__link" rel="noopener">Executive Committee</a></li>
+                      <li><a href="https://www.bmw.fr/fr/topics/univers.html" class="mega-menu__link" rel="noopener">CSR Commitments & Sustainability</a></li>
+                      <li><a href="https://www.bmw.fr/fr/topics/univers.html" class="mega-menu__link" rel="noopener">Working at BMW</a></li>
+                    </ul>
+                  </div>
+                  <!-- Col 2: Experiences & Events -->
+                  <div class="mega-menu__col">
+                    <h4 class="mega-menu__col-title">Experiences & Events</h4>
+                    <ul class="mega-menu__list">
+                      <li><a href="https://www.bmw-m.com" class="mega-menu__link" target="_blank" rel="noopener">BMW M Motorsport</a></li>
+                      <li><a href="https://www.bmw.fr/fr/topics/univers.html" class="mega-menu__link" rel="noopener">BMW Driving Experience</a></li>
+                      <li><a href="https://www.bmw-welt.com" class="mega-menu__link" target="_blank" rel="noopener">BMW Welt & Museum</a></li>
+                      <li><a href="https://www.bmw.fr/fr/topics/univers.html" class="mega-menu__link" rel="noopener">Exclusive BMW Events</a></li>
+                    </ul>
+                  </div>
+                  <!-- Col 3: Technology & Innovation -->
+                  <div class="mega-menu__col">
+                    <h4 class="mega-menu__col-title">Technology & Innovation</h4>
+                    <ul class="mega-menu__list">
+                      <li><a href="https://www.bmw.fr/fr/topics/univers.html" class="mega-menu__link" rel="noopener">BMW Operating System 9</a></li>
+                      <li><a href="https://www.bmw.fr/fr/topics/univers.html" class="mega-menu__link" rel="noopener">eDrive 6th Generation</a></li>
+                      <li><a href="https://www.bmw.fr/fr/topics/univers.html" class="mega-menu__link" rel="noopener">Circular Design Philosophy</a></li>
+                      <li><a href="https://www.bmw.fr/fr/topics/univers.html" class="mega-menu__link" rel="noopener">Automated Driving & Safety</a></li>
+                    </ul>
+                  </div>
+                  <!-- Col 4: Alpina -->
+                  <div class="mega-menu__col">
+                    <h4 class="mega-menu__col-title">Alpina</h4>
+                    <ul class="mega-menu__list">
+                      <li><a href="https://www.alpina-automobiles.com" class="mega-menu__link" target="_blank" rel="noopener">BMW ALPINA Heritage</a></li>
+                      <li><a href="https://www.alpina-automobiles.com" class="mega-menu__link" target="_blank" rel="noopener">Bespoke Craftsmanship</a></li>
+                      <li><a href="https://www.alpina-automobiles.com" class="mega-menu__link" target="_blank" rel="noopener">Performance Automobiles</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <!-- AI Assistant Flyout -->
+            <li class="nav__item nav__item--has-menu" role="none">
+              <button class="nav__btn" aria-haspopup="true" aria-expanded="false" role="menuitem">
+                <span>AI Assistant</span>
+                <svg class="nav__chevron" viewBox="0 0 12 12" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="2 4 6 8 10 4"></polyline>
+                </svg>
+              </button>
+
+              <div class="ai-flyout" role="menu" aria-label="AI Assistant Flyout">
+                <div class="ai-flyout__header">
+                  <img src="./assets/ai-badge.png" alt="AI badge" class="ai-flyout__icon" width="32" height="32">
+                  <h3 class="ai-flyout__title">BMW AI Assistant.</h3>
+                </div>
+                <p class="ai-flyout__desc">
+                  Experience next-generation conversational discovery. Find your ideal BMW model, explore tailored lease options, or ask questions instantly powered by AI.
+                </p>
+                <a href="#ai-assistant" class="btn btn--primary">Start now</a>
+              </div>
+            </li>
+
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Right: User Icons & Mobile Hamburger -->
+      <div class="header__right">
+        <!-- User Profile -->
+        <a href="https://www.bmw.fr/fr/plus-de-bmw/my-bmw.html" class="header__icon-btn" aria-label="User Profile & Account" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+        </a>
+
+        <!-- Shopping Cart / Bag -->
+        <a href="https://www.bmw.fr/fr/shop/ls/cp/connected-drive" class="header__icon-btn" aria-label="Shopping Cart" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+          </svg>
+        </a>
+
+        <!-- Wishlist / Heart -->
+        <a href="https://www.bmw.fr/fr/tous-les-modeles.html" class="header__icon-btn" aria-label="Favorites & Saved Cars" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+          </svg>
+        </a>
+
+        <!-- Location Pin / Dealerships -->
+        <a href="https://www.bmw.fr/fr/fastlane/dealer-locator.html" class="header__icon-btn" aria-label="Find your BMW partner" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+            <circle cx="12" cy="10" r="3"></circle>
+          </svg>
+        </a>
+
+        <!-- Hamburger Button for Mobile -->
+        <button class="header__hamburger" aria-label="Open mobile menu" aria-expanded="false" aria-controls="mobile-nav">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer with Accordions -->
+  <aside id="mobile-nav" class="mobile-nav" aria-label="Mobile Navigation Drawer">
+    <div class="mobile-nav__header">
+      <img src="./assets/bmw-logo.png" alt="BMW Logo" width="36" height="36">
+      <button class="mobile-nav__close" aria-label="Close mobile menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+    <div class="mobile-nav__body">
+      
+      <div class="mobile-nav__accordion">
+        <a href="https://www.bmw.fr/fr/tous-les-modeles.html" class="mobile-nav__accordion-btn" style="text-decoration:none;" rel="noopener">Models</a>
+      </div>
+
+      <!-- Buy Group -->
+      <div class="mobile-nav__accordion">
+        <button class="mobile-nav__accordion-btn" aria-expanded="false">Buy</button>
+        <div class="mobile-nav__accordion-content">
+          <a href="https://configure.bmw.fr/fr_FR/configure" class="mobile-nav__accordion-link" rel="noopener">Configure your BMW</a>
+          <a href="https://www.bmw.fr/fr/tous-les-modeles.html" class="mobile-nav__accordion-link" rel="noopener">New BMWs available</a>
+          <a href="https://www.bmw.fr/fr/tous-les-modeles.html" class="mobile-nav__accordion-link" rel="noopener">Used BMWs available</a>
+          <a href="https://www.bmw.fr/fr/tous-les-modeles/offres.html" class="mobile-nav__accordion-link" rel="noopener">Exclusive BMW offers</a>
+          <a href="https://www.bmw.fr/fr/fastlane/dealer-locator.html" class="mobile-nav__accordion-link" rel="noopener">Find your BMW partner</a>
+        </div>
+      </div>
+
+      <!-- Electric Range Group -->
+      <div class="mobile-nav__accordion">
+        <button class="mobile-nav__accordion-btn" aria-expanded="false">Electric range</button>
+        <div class="mobile-nav__accordion-content">
+          <a href="https://www.bmw.fr/fr/tous-les-modeles.html" class="mobile-nav__accordion-link" rel="noopener">BMW electric vehicles</a>
+          <a href="https://www.bmw.fr/fr/tous-les-modeles/3-series/berline/bmw-i3-berline.html" class="mobile-nav__accordion-link" rel="noopener">New BMW i3 Sedan</a>
+          <a href="https://www.bmw.fr/fr/tous-les-modeles/x-series/suv/bmw-ix5.html" class="mobile-nav__accordion-link" rel="noopener">New BMW iX5</a>
+          <a href="https://www.bmw.fr/fr/topics/univers/electromobilite/recharge-publique.html" class="mobile-nav__accordion-link" rel="noopener">Public charging network</a>
+          <a href="https://www.bmw.fr/fr/topics/univers/electromobilite/recharge-a-domicile.html" class="mobile-nav__accordion-link" rel="noopener">Home charging</a>
+        </div>
+      </div>
+
+      <!-- Services Group -->
+      <div class="mobile-nav__accordion">
+        <button class="mobile-nav__accordion-btn" aria-expanded="false">Services</button>
+        <div class="mobile-nav__accordion-content">
+          <a href="https://www.bmw.fr/fr/topics/offres-et-services/rendez-vous-en-ligne.html" class="mobile-nav__accordion-link" rel="noopener">Schedule an appointment</a>
+          <a href="https://www.bmw.fr/fr/plus-de-bmw/customer-support.html" class="mobile-nav__accordion-link" rel="noopener">Customer service & FAQ</a>
+          <a href="https://www.bmw.fr/fr/topics/univers/my-bmw-app.html" class="mobile-nav__accordion-link" rel="noopener">MY BMW App</a>
+          <a href="https://www.bmw.fr/fr/shop/ls/cp/connected-drive" class="mobile-nav__accordion-link" rel="noopener">Remote Software Upgrade</a>
+          <a href="https://www.bmw.fr/fr/topics/offres-et-services.html" class="mobile-nav__accordion-link" rel="noopener">Takata airbag recall campaign</a>
+        </div>
+      </div>
+
+      <!-- Brand Group -->
+      <div class="mobile-nav__accordion">
+        <button class="mobile-nav__accordion-btn" aria-expanded="false">Brand</button>
+        <div class="mobile-nav__accordion-content">
+          <a href="https://www.bmwgroup.com" class="mobile-nav__accordion-link" target="_blank" rel="noopener">The BMW Group</a>
+          <a href="https://www.bmw.fr/fr/topics/univers/concept-cars.html" class="mobile-nav__accordion-link" rel="noopener">Vision Neue Klasse</a>
+          <a href="https://www.bmw-m.com" class="mobile-nav__accordion-link" target="_blank" rel="noopener">BMW M Motorsport</a>
+          <a href="https://www.bmw.fr/fr/topics/univers.html" class="mobile-nav__accordion-link" rel="noopener">Sustainability & CSR</a>
+        </div>
+      </div>
+
+      <!-- AI Assistant Group -->
+      <div class="mobile-nav__accordion">
+        <button class="mobile-nav__accordion-btn" aria-expanded="false">BMW AI Assistant</button>
+        <div class="mobile-nav__accordion-content">
+          <p style="font-size:12px; line-height:18px; color:var(--color-placeholder); margin-bottom:8px;">
+            Conversational search and personalized vehicle assistance.
+          </p>
+          <a href="#ai-assistant" class="btn btn--primary" style="font-size:13px; padding:4px 16px;">Start now</a>
+        </div>
+      </div>
+
+    </div>
+  </aside>
+  <div class="mobile-nav-backdrop" aria-hidden="true"></div>
+
+  <!-- =========================================================================
+       MAIN CONTENT CONTAINER
+       ========================================================================= -->
+  <main class="main" id="main-content">
+
+    <!-- =======================================================================
+         2. Hero Section (New BMW i3.)
+         ======================================================================= -->
+    <section class="hero" aria-label="New BMW i3 Presentation">
+      <!-- MP4 Video Background from /assets with Poster Image -->
+      <video class="hero__video" autoplay loop muted playsinline poster="./assets/hero.jpg" aria-label="New BMW i3 video presentation">
+        <source src="./assets/hero.mp4" type="video/mp4">
+      </video>
+      <img src="./assets/hero.jpg" alt="New BMW i3" class="hero__poster-fallback" aria-hidden="true">
+      <div class="hero__overlay" aria-hidden="true"></div>
+
+      <!-- Hero Bottom Content -->
+      <div class="hero__content">
+        <div class="hero__text-block">
+          <h1 class="hero__title">New BMW i3.</h1>
+          <p class="hero__subtitle">UP TO 912 KM RANGE.</p>
+          <div class="btn-group">
+            <a href="https://configure.bmw.fr/fr_FR/configure" class="btn btn--primary" rel="noopener">Configuration & Price</a>
+            <a href="https://www.bmw.fr/fr/tous-les-modeles/3-series/berline/bmw-i3-berline.html" class="btn btn--outline-light" rel="noopener">Discover it</a>
+          </div>
+        </div>
+
+        <div class="hero__right-controls">
+          <!-- Energy Label A (0g CO2/km) -->
+          <div class="energy-label" aria-label="Energy Label A, 0 grams CO2 per kilometer">
+            <div class="energy-label__badge energy-label__badge--a">
+              <span>HAS</span>
+              <span>0g CO₂/km</span>
+            </div>
+            <div class="energy-label__bars" aria-hidden="true">
+              <div class="energy-label__bar energy-label__bar--a energy-label__bar--active">A</div>
+              <div class="energy-label__bar energy-label__bar--b">B</div>
+              <div class="energy-label__bar energy-label__bar--c">C</div>
+              <div class="energy-label__bar energy-label__bar--d">D</div>
+              <div class="energy-label__bar energy-label__bar--e">E</div>
+              <div class="energy-label__bar energy-label__bar--f">F</div>
+              <div class="energy-label__bar energy-label__bar--g">G</div>
+            </div>
+          </div>
+
+          <!-- Video Play / Pause Toggle Button -->
+          <button class="hero__play-btn" aria-label="Pause video">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="6" y="4" width="4" height="16"></rect>
+              <rect x="14" y="4" width="4" height="16"></rect>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         3. "Find your BMW." Section
+         ======================================================================= -->
+    <section class="find-bmw" aria-labelledby="find-bmw-heading">
+      <h2 id="find-bmw-heading" class="find-bmw__heading">Find your BMW.</h2>
+
+      <div class="find-bmw__grid">
+        
+        <!-- Column 1: New BMWs -->
+        <div class="find-bmw__item">
+          <div class="find-bmw__icon-wrapper" aria-hidden="true">
+            <!-- Clean Inline SVG Car Icon (1.5px stroke) -->
+            <svg viewBox="0 0 48 48" aria-hidden="true">
+              <path d="M6 30 L10 18 L38 18 L42 30 L42 36 L6 36 Z" stroke-linejoin="round"></path>
+              <circle cx="13" cy="36" r="3.5" fill="#262626"></circle>
+              <circle cx="35" cy="36" r="3.5" fill="#262626"></circle>
+              <line x1="16" y1="24" x2="32" y2="24"></line>
+              <path d="M12 18 L16 11 L32 11 L36 18"></path>
+            </svg>
+          </div>
+          <h3 class="find-bmw__label">New BMWs.</h3>
+          <a href="https://www.bmw.fr/fr/tous-les-modeles.html" class="btn btn--outline-dark" rel="noopener">Find your BMW</a>
+        </div>
+
+        <!-- Column 2: Exclusive Offers -->
+        <div class="find-bmw__item">
+          <div class="find-bmw__icon-wrapper" aria-hidden="true">
+            <!-- Clean Inline SVG Price Tag Icon (1.5px stroke) -->
+            <svg viewBox="0 0 48 48" aria-hidden="true">
+              <path d="M12 24 L24 12 L38 12 L38 26 L26 38 L12 24 Z" stroke-linejoin="round"></path>
+              <circle cx="32" cy="18" r="2.5" fill="#262626"></circle>
+              <line x1="20" y1="32" x2="30" y2="22"></line>
+            </svg>
+          </div>
+          <h3 class="find-bmw__label">Exclusive Offers.</h3>
+          <a href="https://www.bmw.fr/fr/tous-les-modeles/offres.html" class="btn btn--outline-dark" rel="noopener">Discover our offers</a>
+        </div>
+
+        <!-- Column 3: Configuration & Price -->
+        <div class="find-bmw__item">
+          <div class="find-bmw__icon-wrapper" aria-hidden="true">
+            <!-- Clean Inline SVG Configurator Plus Icon (1.5px stroke) -->
+            <svg viewBox="0 0 48 48" aria-hidden="true">
+              <path d="M6 32 L10 20 L34 20 L38 32 L38 37 L6 37 Z" stroke-linejoin="round"></path>
+              <circle cx="12" cy="37" r="3" fill="#262626"></circle>
+              <circle cx="32" cy="37" r="3" fill="#262626"></circle>
+              <circle cx="38" cy="14" r="7" stroke-width="1.5"></circle>
+              <line x1="38" y1="10" x2="38" y2="18" stroke-width="1.5"></line>
+              <line x1="34" y1="14" x2="42" y2="14" stroke-width="1.5"></line>
+            </svg>
+          </div>
+          <h3 class="find-bmw__label">Configuration & Price.</h3>
+          <a href="https://configure.bmw.fr/fr_FR/configure" class="btn btn--outline-dark" rel="noopener">Personalize yours</a>
+        </div>
+
+        <!-- Column 4: BMW AI Assistant -->
+        <div class="find-bmw__item">
+          <div class="find-bmw__icon-wrapper" aria-hidden="true">
+            <!-- Clean Inline SVG AI Sparkle Stars Icon (1.5px stroke) -->
+            <svg viewBox="0 0 48 48" aria-hidden="true">
+              <path d="M24 8 C24 14 28 18 34 18 C28 18 24 22 24 28 C24 22 20 18 14 18 C20 18 24 14 24 8 Z" fill="#262626"></path>
+              <path d="M14 26 C14 29 16 31 19 31 C16 31 14 33 14 36 C14 33 12 31 9 31 C12 31 14 29 14 26 Z" fill="#262626"></path>
+              <path d="M34 28 C34 31 36 33 39 33 C36 33 34 35 34 38 C34 35 32 33 29 33 C32 33 34 31 34 28 Z" fill="#262626"></path>
+            </svg>
+          </div>
+          <h3 class="find-bmw__label">BMW AI Assistant.</h3>
+          <a href="#ai-assistant" class="btn btn--outline-dark">Start now</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         4. Three Model Banners (iX5, X1, iX4)
+         ======================================================================= -->
+    <div class="model-banners" id="models">
+      
+      <!-- Banner 1: New BMW iX5 -->
+      <article class="model-banner" aria-label="New BMW iX5">
+        <picture>
+          <source media="(max-width: 767px)" srcset="./assets/banner-ix5-square.webp">
+          <source media="(max-width: 1023px)" srcset="./assets/banner-ix5-tall.webp">
+          <img src="./assets/ix5.jpg" alt="New BMW iX5" class="model-banner__bg" loading="lazy" width="1024" height="340">
+        </picture>
+        <div class="model-banner__overlay" aria-hidden="true"></div>
+
+        <div class="model-banner__content">
+          <div class="model-banner__text-block">
+            <h2 class="model-banner__title">New BMW iX5</h2>
+            <p class="model-banner__subtitle">Up to 850 km range.</p>
+            <div class="btn-group">
+              <a href="https://configure.bmw.fr/fr_FR/configure" class="btn btn--primary" rel="noopener">Configuration & Price</a>
+              <a href="https://www.bmw.fr/fr/tous-les-modeles/x-series/suv/bmw-ix5.html" class="btn btn--outline-light" rel="noopener">Discover it</a>
+            </div>
+          </div>
+
+          <!-- Energy Label A -->
+          <div class="energy-label" aria-label="Energy Label A, 0 grams CO2 per kilometer">
+            <div class="energy-label__badge energy-label__badge--a">
+              <span>HAS</span>
+              <span>0g CO₂/km</span>
+            </div>
+            <div class="energy-label__bars" aria-hidden="true">
+              <div class="energy-label__bar energy-label__bar--a energy-label__bar--active">A</div>
+              <div class="energy-label__bar energy-label__bar--b">B</div>
+              <div class="energy-label__bar energy-label__bar--c">C</div>
+              <div class="energy-label__bar energy-label__bar--d">D</div>
+              <div class="energy-label__bar energy-label__bar--e">E</div>
+              <div class="energy-label__bar energy-label__bar--f">F</div>
+              <div class="energy-label__bar energy-label__bar--g">G</div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Banner 2: BMW X1 -->
+      <article class="model-banner" aria-label="BMW X1">
+        <img src="./assets/x1.jpg" alt="BMW X1" class="model-banner__bg" loading="lazy" width="1024" height="340">
+        <div class="model-banner__overlay" aria-hidden="true"></div>
+
+        <div class="model-banner__content">
+          <div class="model-banner__text-block">
+            <h2 class="model-banner__title">BMW X1.</h2>
+            <p class="model-banner__lease-info">From €490/month.<br>39-month lease.<sup>1</sup></p>
+            <p class="model-banner__subtitle">M Sport trim, no down payment and maintenance included.</p>
+            <div class="btn-group">
+              <a href="https://www.bmw.fr/fr/tous-les-modeles.html" class="btn btn--primary" rel="noopener">Find yours</a>
+              <a href="https://www.bmw.fr/fr/plus-de-bmw/customer-support.html" class="btn btn--outline-light" rel="noopener">Request a quote</a>
+            </div>
+          </div>
+
+          <!-- Energy Label C (Corrected: 130g CO2/km) -->
+          <div class="energy-label" aria-label="Energy Label C, 130 grams CO2 per kilometer">
+            <div class="energy-label__badge energy-label__badge--c">
+              <span>HAS</span>
+              <span>130g CO₂/km</span>
+            </div>
+            <div class="energy-label__bars" aria-hidden="true">
+              <div class="energy-label__bar energy-label__bar--a">A</div>
+              <div class="energy-label__bar energy-label__bar--b">B</div>
+              <div class="energy-label__bar energy-label__bar--c energy-label__bar--active">C</div>
+              <div class="energy-label__bar energy-label__bar--d">D</div>
+              <div class="energy-label__bar energy-label__bar--e">E</div>
+              <div class="energy-label__bar energy-label__bar--f">F</div>
+              <div class="energy-label__bar energy-label__bar--g">G</div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Banner 3: New BMW iX4 -->
+      <article class="model-banner" aria-label="New BMW iX4">
+        <img src="./assets/ix4.jpg" alt="New BMW iX4" class="model-banner__bg" loading="lazy" width="1024" height="340">
+        <div class="model-banner__overlay" aria-hidden="true"></div>
+
+        <!-- AI Sparkle Badge at Top-Right -->
+        <div class="model-banner__ai-badge" aria-label="AI-generated content badge">
+          <img src="./assets/ai-badge.png" alt="AI badge" width="24" height="24">
+        </div>
+
+        <div class="model-banner__content">
+          <div class="model-banner__text-block">
+            <h2 class="model-banner__title">New BMW iX4.</h2>
+            <p class="model-banner__subtitle">Up to 828 km of range.</p>
+            <div class="btn-group">
+              <a href="https://configure.bmw.fr/fr_FR/configure" class="btn btn--primary" rel="noopener">Configuration & Price</a>
+              <a href="https://www.bmw.fr/fr/tous-les-modeles/x-series/suv/bmw-ix4.html" class="btn btn--outline-light" rel="noopener">Discover it</a>
+            </div>
+          </div>
+
+          <!-- Energy Label A -->
+          <div class="energy-label" aria-label="Energy Label A, 0 grams CO2 per kilometer">
+            <div class="energy-label__badge energy-label__badge--a">
+              <span>HAS</span>
+              <span>0g CO₂/km</span>
+            </div>
+            <div class="energy-label__bars" aria-hidden="true">
+              <div class="energy-label__bar energy-label__bar--a energy-label__bar--active">A</div>
+              <div class="energy-label__bar energy-label__bar--b">B</div>
+              <div class="energy-label__bar energy-label__bar--c">C</div>
+              <div class="energy-label__bar energy-label__bar--d">D</div>
+              <div class="energy-label__bar energy-label__bar--e">E</div>
+              <div class="energy-label__bar energy-label__bar--f">F</div>
+              <div class="energy-label__bar energy-label__bar--g">G</div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- =======================================================================
+         5. Genuine BMW Accessories Section
+         ======================================================================= -->
+    <section class="accessories" aria-labelledby="accessories-heading">
+      <div class="accessories__media">
+        <img src="./assets/accessories.jpg" alt="Genuine BMW Accessories with car on mountain pass" class="accessories__img" loading="lazy" width="676" height="451">
+      </div>
+      <div class="accessories__content">
+        <h2 id="accessories-heading" class="accessories__heading">Genuine BMW Accessories.</h2>
+        <p class="accessories__text">
+          Give every journey a new dimension. Perfectly designed for your BMW, BMW Genuine Accessories enhance your travels and adapt to all your desires.
+        </p>
+        <p class="accessories__text">
+          And right now, enjoy 20% off <sup>2</sup> selection of BMW accessories to make your experience even more exceptional.
+        </p>
+        <a href="https://www.bmw.fr/fr/topics/offres-et-services/accessoires.html" class="accessories__link" rel="noopener">
+          <span>Genuine BMW Accessories</span>
+          <span class="accessories__link-arrow" aria-hidden="true">&gt;</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         6. Legal Notice Section
+         ======================================================================= -->
+    <section class="legal-notice" aria-label="Legal notices and consumption specifications">
+      <h3 class="legal-notice__title">Legal notice:</h3>
+      <ul class="legal-notice__list">
+        <li class="legal-notice__item">
+          BMW i3 50 xDrive Sedan: Energy consumption, WLTP combined in kWh/100 km: 13.4–16.2; Electric range, WLTP in km: 814–912
+        </li>
+        <!-- Corrected: BMW iX5 60 xDrive -->
+        <li class="legal-notice__item">
+          BMW iX5 60 xDrive: Electric consumption, combined cycle WLTP in kWh/100 km: 19.3–21.4; Electric range, WLTP in km: 764–850
+        </li>
+        <li class="legal-notice__item">
+          BMW iX4 50 xDrive: Electric consumption, combined cycle WLTP in kWh/100 km: 15.7–17.6; Electric range, WLTP in km: 736–828
+        </li>
+        <li class="legal-notice__item">
+          <sup>1</sup> Example for a BMW X1 sDrive20i M Sport. 39 linear monthly payments: €490/month. Long-term lease over 39 months and for 30,000 km including maintenance and extended warranty. Financial loss insurance must be purchased through BMW Finance or with the insurer of your choice, subject to providing proof to BMW Finance. Offer reserved for private individuals for any order of a BMW X1 sDrive20i M Sport at participating dealerships before November 30, 2026, while stocks last and subject to acceptance by BMW Finance. Excludes wear parts. Since September 1, 2018, new light vehicles in Europe have been type-approved based on the Worldwide Harmonised Light Vehicles Test Procedure (WLTP), a test procedure that provides more realistic fuel consumption and CO₂ emissions figures than the previously used NEDC procedure. Model shown: BMW X1 sDrive20i M Sport with options at €510/month with no down payment. 39-month lease. 30,000 km.
+        </li>
+        <li class="legal-notice__item">
+          <sup>2</sup> Offer subject to conditions, valid on genuine BMW accessories for any purchase of a minimum amount of €100, from October 1st to December 31st, 2026.
+        </li>
+      </ul>
+    </section>
+
+    <!-- =======================================================================
+         7. AI-Generated Content Bar
+         ======================================================================= -->
+    <aside class="ai-bar" aria-label="Artificial Intelligence Transparency Statement">
+      <img src="./assets/ai-badge.png" alt="AI badge" class="ai-bar__icon" width="24" height="24">
+      <p class="ai-bar__text">
+        <strong>AI-generated content</strong> This icon indicates that the content presented was created, generated, enhanced, or modified using artificial intelligence (AI).
+      </p>
+    </aside>
+
+  </main>
+
+  <!-- =========================================================================
+       8. Footer (3 Columns, Semantic Static HTML)
+       ========================================================================= -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__container">
+      
+      <!-- 3 Columns Layout -->
+      <div class="footer__columns">
+        
+        <!-- Column 1 -->
+        <div class="footer__col">
+          <div class="footer__group">
+            <h3 class="footer__heading">Contact and information</h3>
+            <ul class="footer__list">
+              <li><a href="https://www.bmw.fr/fr/plus-de-bmw/customer-support.html" class="footer__link" rel="noopener">Customer service</a></li>
+              <li><a href="https://www.bmw.fr/fr/plus-de-bmw/customer-support.html" class="footer__link" rel="noopener">FAQ</a></li>
+              <li><a href="https://www.bmw.fr/fr/fastlane/dealer-locator.html" class="footer__link" rel="noopener">Find your BMW partner</a></li>
+              <li><a href="https://www.bmw.fr/fr/plus-de-bmw/customer-support.html" class="footer__link" rel="noopener">Help & Contact</a></li>
+              <li><a href="https://www.bmw.fr/fr/plus-de-bmw/customer-support.html" class="footer__link" rel="noopener">Request a quote</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__group">
+            <h3 class="footer__heading">Discover BMW</h3>
+            <ul class="footer__list">
+              <li><a href="https://www.bmw.fr/fr/topics/univers.html" class="footer__link" rel="noopener">Executive Committee</a></li>
+              <li><a href="https://www.bmw.fr/fr/topics/univers.html" class="footer__link" rel="noopener">CSR Commitments</a></li>
+              <li><a href="https://www.bmw.fr/fr/topics/univers.html" class="footer__link" rel="noopener">ISO 9001 Certification</a></li>
+              <li><a href="https://www.bmw.fr/fr/topics/univers.html" class="footer__link" rel="noopener">Working at BMW</a></li>
+              <li><a href="https://www.bmw.fr/fr/topics/univers.html" class="footer__link" rel="noopener">BMW Group training courses</a></li>
+              <li><a href="https://www.bmwgroup.com" class="footer__link" target="_blank" rel="noopener">The BMW Group</a></li>
+              <li><a href="https://www.bmw.fr/fr/topics/offres-et-financement.html" class="footer__link" rel="noopener">BMW Finance Governance</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Column 2 -->
+        <div class="footer__col">
+          <div class="footer__group">
+            <h3 class="footer__heading">Assistance and services</h3>
+            <ul class="footer__list">
+              <li><a href="https://www.bmw.fr/fr/topics/offres-et-services.html" class="footer__link" rel="noopener">Takata airbag recall campaign</a></li>
+              <li><a href="https://www.bmw.fr/fr/topics/offres-et-services.html" class="footer__link" rel="noopener">Technical reminders and updates</a></li>
+              <li><a href="https://www.bmw.fr/fr/topics/offres-et-services/rendez-vous-en-ligne.html" class="footer__link" rel="noopener">Schedule an appointment for a check-up</a></li>
+              <li><a href="https://www.bmw.fr/fr/plus-de-bmw/my-bmw.html" class="footer__link" rel="noopener">MY BMW</a></li>
+              <li><a href="https://www.bmw.fr/fr/topics/univers/my-bmw-app.html" class="footer__link" rel="noopener">MY BMW App</a></li>
+              <li><a href="https://www.bmw.fr/fr/topics/offres-et-financement.html" class="footer__link" rel="noopener">BMW Insurance</a></li>
+              <li><a href="https://www.bmw.fr/fr/shop/ls/cp/connected-drive" class="footer__link" rel="noopener">BMW ConnectedDrive</a></li>
+              <li><a href="https://www.bmw.fr/fr/topics/offres-et-services.html" class="footer__link" rel="noopener">Guarantees</a></li>
+              <li><a href="https://www.bmw.fr/fr/topics/univers/my-bmw-app.html" class="footer__link" rel="noopener">Application Driver's Guide</a></li>
+              <li><a href="https://www.bmw.fr/fr/shop/ls/cp/connected-drive" class="footer__link" rel="noopener">Remote Software Upgrade</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__group">
+            <h3 class="footer__heading">Choose and buy</h3>
+            <ul class="footer__list">
+              <li><a href="https://configure.bmw.fr/fr_FR/configure" class="footer__link" rel="noopener">Configure your BMW</a></li>
+              <li><a href="https://www.bmw.fr/fr/tous-les-modeles.html" class="footer__link" rel="noopener">New BMWs available</a></li>
+              <li><a href="https://www.bmw.fr/fr/tous-les-modeles.html" class="footer__link" rel="noopener">Used BMWs available</a></li>
+              <li><a href="https://www.bmw.fr/fr/topics/offres-et-services/accessoires.html" class="footer__link" rel="noopener">BMW Accessories</a></li>
+              <li><a href="https://www.bmw.fr/fr/topics/offres-et-financement.html" class="footer__link" rel="noopener">BMW Financial Services</a></li>
+              <li><a href="https://www.bmw.fr/fr/tous-les-modeles.html" class="footer__link" rel="noopener">Favorites</a></li>
+              <li><a href="https://www.bmw.fr/fr/shop/ls/cp/connected-drive" class="footer__link" rel="noopener">Connected Drive store</a></li>
+              <li><a href="https://www.bmw.fr/fr/tous-les-modeles/offres.html" class="footer__link" rel="noopener">Exclusive BMW offers</a></li>
+              <li><a href="https://www.bmw.fr/fr/tous-les-modeles.html" class="footer__link" rel="noopener">Compare BMW models</a></li>
+              <li><a href="https://www.bmw.fr/fr/topics/offres-et-services/accessoires.html" class="footer__link" rel="noopener">BMW Lifestyle Boutique</a></li>
+              <li><a href="https://www.bmw.fr/fr/tous-les-modeles.html" class="footer__link" rel="noopener">Trade-in of your vehicle</a></li>
+              <li><a href="https://www.bmw.fr/fr/tous-les-modeles/demande-essai.html" class="footer__link" rel="noopener">Book your test drive</a></li>
+              <li><a href="https://www.bmw.fr/fr/tous-les-modeles.html" class="footer__link" rel="noopener">BMW's personalized recommendation</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Column 3 -->
+        <div class="footer__col">
+          <div class="footer__group">
+            <h3 class="footer__heading">Models</h3>
+            <ul class="footer__list">
+              <li><a href="https://www.bmw.fr/fr/tous-les-modeles.html" class="footer__link" rel="noopener">BMW X</a></li>
+              <li><a href="https://www.bmw.fr/fr/tous-les-modeles.html" class="footer__link" rel="noopener">BMW 7 Series</a></li>
+              <li><a href="https://www.bmw.fr/fr/tous-les-modeles.html" class="footer__link" rel="noopener">BMW 5 Series</a></li>
+              <li><a href="https://www.bmw.fr/fr/tous-les-modeles.html" class="footer__link" rel="noopener">BMW 4 Series</a></li>
+              <li><a href="https://www.bmw.fr/fr/tous-les-modeles.html" class="footer__link" rel="noopener">BMW 3 Series</a></li>
+              <li><a href="https://www.bmw.fr/fr/tous-les-modeles.html" class="footer__link" rel="noopener">BMW 2 Series</a></li>
+              <li><a href="https://www.bmw.fr/fr/tous-les-modeles.html" class="footer__link" rel="noopener">BMW 1 Series</a></li>
+              <li><a href="https://www.bmw.fr/fr/tous-les-modeles.html" class="footer__link" rel="noopener">BMW Z</a></li>
+              <li><a href="https://www.bmw.fr/fr/tous-les-modeles.html" class="footer__link" rel="noopener">BMW i</a></li>
+              <li><a href="https://www.bmw-m.com" class="footer__link" target="_blank" rel="noopener">BMW M</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__group">
+            <h3 class="footer__heading">Electric by BMW</h3>
+            <ul class="footer__list">
+              <li><a href="https://www.bmw.fr/fr/tous-les-modeles.html" class="footer__link" rel="noopener">BMW electric vehicles</a></li>
+              <li><a href="https://www.bmw.fr/fr/topics/univers/electromobilite/recharge-publique.html" class="footer__link" rel="noopener">Public charging</a></li>
+              <li><a href="https://www.bmw.fr/fr/topics/univers/electromobilite/recharge-a-domicile.html" class="footer__link" rel="noopener">Home charging</a></li>
+              <li><a href="https://www.bmw.fr/fr/topics/univers/electromobilite.html" class="footer__link" rel="noopener">Cost of electric cars</a></li>
+              <li><a href="https://www.bmw.fr/fr/tous-les-modeles.html" class="footer__link" rel="noopener">BMW plug-in hybrids</a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Clean Inline SVG Social Icons (Matching PDF) -->
+      <div class="footer__social" aria-label="BMW Social Media Channels">
+        <a href="https://facebook.com/BMWFrance" class="footer__social-link" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+          </svg>
+        </a>
+        <a href="https://instagram.com/bmwfrance" class="footer__social-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="currentColor" stroke-width="2"></rect>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" fill="none" stroke="currentColor" stroke-width="2"></path>
+            <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"></circle>
+          </svg>
+        </a>
+        <a href="https://youtube.com/BMWFrance" class="footer__social-link" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
+            <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="#fff"></polygon>
+          </svg>
+        </a>
+        <a href="https://linkedin.com/showcase/bmwfrance" class="footer__social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+            <rect x="2" y="9" width="4" height="12"></rect>
+            <circle cx="4" cy="4" r="2"></circle>
+          </svg>
+        </a>
+      </div>
+
+      <!-- Bottom Bar Links -->
+      <div class="footer__bottom">
+        <nav class="footer__bottom-links" aria-label="Legal and Compliance Links">
+          <span>Copyright © BMW AG 2026</span>
+          <span>·</span>
+          <a href="https://www.bmw.fr/fr/plus-de-bmw/customer-support.html" class="footer__bottom-link" rel="noopener">Contact</a>
+          <span>·</span>
+          <a href="https://www.bmw.fr/fr/topics/univers.html" class="footer__bottom-link" rel="noopener">Newsletter</a>
+          <span>·</span>
+          <a href="https://www.bmw.fr/fr/footer/protection-donnees.html" class="footer__bottom-link" rel="noopener">Cookies</a>
+          <span>·</span>
+          <a href="https://www.bmw.fr/fr/footer/mentions-legales.html" class="footer__bottom-link" rel="noopener">Legal notice</a>
+          <span>·</span>
+          <a href="https://www.bmw.fr/fr/footer/accessibilite.html" class="footer__bottom-link" rel="noopener">Accessibility: non-compliant</a>
+          <span>·</span>
+          <a href="https://www.bmw.fr/fr/footer/consommations.html" class="footer__bottom-link" rel="noopener">Consumption and emissions</a>
+          <span>·</span>
+          <a href="https://www.bmw.fr/fr/footer/protection-donnees.html" class="footer__bottom-link" rel="noopener">Privacy Policy</a>
+          <span>·</span>
+          <a href="https://www.bmw.fr/fr/footer/dsa.html" class="footer__bottom-link" rel="noopener">Digital Services Regulations</a>
+          <span>·</span>
+          <a href="https://www.bmw.fr/fr/footer/gpsr.html" class="footer__bottom-link" rel="noopener">General Product Safety Regulations</a>
+          <span>·</span>
+          <a href="https://www.bmw.fr/fr/footer/batteries.html" class="footer__bottom-link" rel="noopener">European regulations on batteries</a>
+          <span>·</span>
+          <a href="https://www.bmw.fr/fr/footer/protection-donnees.html" class="footer__bottom-link" rel="noopener">Data Protection Regulations</a>
+          <span>·</span>
+          <a href="https://www.bmw.fr/fr/footer/retractation.html" class="footer__bottom-link" rel="noopener">Request a cancellation of your order</a>
+          <span>·</span>
+          <a href="https://www.bmw.fr/fr/sitemap.html" class="footer__bottom-link" rel="noopener">Site map</a>
+        </nav>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       9. Floating Sticky Chat Widget & Popover
+       ========================================================================= -->
+  <aside class="chat-widget" aria-label="BMW Online Assistant Chat">
+    <button class="chat-widget__btn" aria-label="Open BMW Chat Assistant" aria-expanded="false" aria-controls="chat-popover">
+      <svg viewBox="0 0 24 24" aria-hidden="true" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+      </svg>
+    </button>
+
+    <div id="chat-popover" class="chat-popover" role="dialog" aria-modal="false" aria-labelledby="chat-title">
+      <div class="chat-popover__header">
+        <h4 id="chat-title" class="chat-popover__title">Hello, how can we help you?</h4>
+        <button class="chat-popover__close" aria-label="Close chat dialog">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      
+      <div class="chat-popover__options">
+        <a href="#ai-assistant" class="chat-popover__option">
+          <div class="chat-popover__option-icon">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+              <path d="M12 2 C12 6 15 9 19 9 C15 9 12 12 12 16 C12 12 9 9 5 9 C9 9 12 6 12 2 Z"/>
+            </svg>
+          </div>
+          <div class="chat-popover__option-text">
+            <strong>BMW AI Assistant</strong>
+            <span>Conversational vehicle search & advice</span>
+          </div>
+        </a>
+
+        <a href="https://www.bmw.fr/fr/plus-de-bmw/customer-support.html" class="chat-popover__option" target="_blank" rel="noopener">
+          <div class="chat-popover__option-icon">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+              <line x1="12" y1="17" x2="12.01" y2="17"></line>
+            </svg>
+          </div>
+          <div class="chat-popover__option-text">
+            <strong>Help & Contact</strong>
+            <span>Customer service & local dealerships</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- JavaScript Application -->
+  <script src="./js/script.js" defer></script>
+</body>
+</html>
