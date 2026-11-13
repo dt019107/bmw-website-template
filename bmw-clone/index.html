@@ -427,7 +427,7 @@
           <p class="hero__subtitle">UP TO 912 KM RANGE.</p>
           <div class="btn-group">
             <a href="https://configure.bmw.fr/fr_FR/configure" class="btn btn--primary" rel="noopener">Configuration & Price</a>
-            <a href="https://www.bmw.fr/fr/tous-les-modeles/3-series/berline/bmw-i3-berline.html" class="btn btn--outline-light" rel="noopener">Discover it</a>
+            <a href="https://www.bmw.fr/fr/tous-les-modeles/3-series/berline/bmw-i3-berline.html" class="btn btn--outline-light" data-video-src="./assets/bmw-video-1.mp4" data-video-title="BMW Cinematic Film" rel="noopener">Discover it</a>
           </div>
         </div>
 
@@ -552,7 +552,7 @@
             <p class="model-banner__subtitle">Up to 850 km range.</p>
             <div class="btn-group">
               <a href="https://configure.bmw.fr/fr_FR/configure" class="btn btn--primary" rel="noopener">Configuration & Price</a>
-              <a href="https://www.bmw.fr/fr/tous-les-modeles/x-series/suv/bmw-ix5.html" class="btn btn--outline-light" rel="noopener">Discover it</a>
+              <a href="https://www.bmw.fr/fr/tous-les-modeles/x-series/suv/bmw-ix5.html" class="btn btn--outline-light" data-video-src="./assets/bmw-video-2.mp4" data-video-title="BMW 1 Series & iX5 Feature Film" rel="noopener">Discover it</a>
             </div>
           </div>
 
@@ -626,7 +626,7 @@
             <p class="model-banner__subtitle">Up to 828 km of range.</p>
             <div class="btn-group">
               <a href="https://configure.bmw.fr/fr_FR/configure" class="btn btn--primary" rel="noopener">Configuration & Price</a>
-              <a href="https://www.bmw.fr/fr/tous-les-modeles/x-series/suv/bmw-ix4.html" class="btn btn--outline-light" rel="noopener">Discover it</a>
+              <a href="https://www.bmw.fr/fr/tous-les-modeles/x-series/suv/bmw-ix4.html" class="btn btn--outline-light" data-video-src="./assets/bmw-video-3.mp4" data-video-title="BMW Design & Interior Experience" rel="noopener">Discover it</a>
             </div>
           </div>
 
@@ -931,6 +931,27 @@
       </div>
     </div>
   </aside>
+
+  <!-- =========================================================================
+       10. High-Definition BMW Video Modal
+       ========================================================================= -->
+  <div id="video-modal" class="video-modal" role="dialog" aria-modal="true" aria-label="BMW Video Player">
+    <div class="video-modal__backdrop" aria-hidden="true"></div>
+    <div class="video-modal__content">
+      <button class="video-modal__close" aria-label="Close video player">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      <div class="video-modal__player-wrapper">
+        <video class="video-modal__player" controls playsinline preload="metadata">
+          <source src="" type="video/mp4">
+          Your browser does not support HTML5 video.
+        </video>
+      </div>
+    </div>
+  </div>
 
   <!-- JavaScript Application -->
   <script src="./js/script.js" defer></script>

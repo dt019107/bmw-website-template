@@ -286,3 +286,68 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 });
+
+
+  // =========================================================================
+  // 8. Video Modal Player
+  // =========================================================================
+  const videoModal = document.getElementById('video-modal');
+  const videoModalPlayer = videoModal ? videoModal.querySelector('.video-modal__player') : null;
+  const videoModalClose = videoModal ? videoModal.querySelector('.video-modal__close') : null;
+  const videoModalBackdrop = videoModal ? videoModal.querySelector('.video-modal__backdrop') : null;
+  const videoTriggers = document.querySelectorAll('[data-video-src]');
+
+  let previousActiveElement = null;
+
+  const openVideoModal = (src, title) => {
+    if (!videoModal || !videoModalPlayer) return;
+    previousActiveElement = document.activeElement;
+    videoModalPlayer.src = src;
+    videoModal.classList.add('video-modal--open');
+    document.body.style.overflow = 'hidden';
+
+    // Pause hero background video to save resources
+    if (heroVideo && !heroVideo.paused) {
+      heroVideo.pause();
+    }
+
+    videoModalPlayer.play().catch(() => {});
+    videoModalClose?.focus();
+  };
+
+  const closeVideoModal = () => {
+    if (!videoModal || !videoModalPlayer || !videoModal.classList.contains('video-modal--open')) return;
+    videoModalPlayer.pause();
+    videoModalPlayer.src = '';
+    videoModal.classList.remove('video-modal--open');
+    document.body.style.overflow = '';
+
+    // Resume hero background video if play button was active
+    if (heroVideo && heroVideo.paused && heroPlayBtn?.getAttribute('aria-label') === 'Pause video') {
+      heroVideo.play().catch(() => {});
+    }
+
+    if (previousActiveElement && typeof previousActiveElement.focus === 'function') {
+      previousActiveElement.focus();
+    }
+  };
+
+  videoTriggers.forEach(trigger => {
+    trigger.addEventListener('click', (e) => {
+      const src = trigger.getAttribute('data-video-src');
+      if (src) {
+        e.preventDefault();
+        const title = trigger.getAttribute('data-video-title') || 'BMW Video';
+        openVideoModal(src, title);
+      }
+    });
+  });
+
+  videoModalClose?.addEventListener('click', closeVideoModal);
+  videoModalBackdrop?.addEventListener('click', closeVideoModal);
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      closeVideoModal();
+    }
+  });
