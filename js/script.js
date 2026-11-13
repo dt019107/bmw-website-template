@@ -140,10 +140,24 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // =========================================================================
-  // 4. Hero Video Play / Pause Toggle
+  // 4. Hero Video Play / Pause Toggle & Autoplay Resilience
   // =========================================================================
   const heroVideo = document.querySelector('.hero__video');
   const heroPlayBtn = document.querySelector('.hero__play-btn');
+  const allBackgroundVideos = document.querySelectorAll('.hero__video, .model-banner__video');
+
+  allBackgroundVideos.forEach(v => {
+    v.muted = true;
+    const playPromise = v.play();
+    if (playPromise !== undefined) {
+      playPromise.catch(() => {
+        // Fallback: wait for first interaction
+        document.addEventListener('click', () => {
+          v.play().catch(() => {});
+        }, { once: true });
+      });
+    }
+  });
 
   if (heroPlayBtn && heroVideo) {
     const playIconSVG = `

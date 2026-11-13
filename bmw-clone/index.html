@@ -417,7 +417,6 @@
       <video class="hero__video" autoplay loop muted playsinline poster="./assets/hero.jpg" aria-label="New BMW i3 video presentation">
         <source src="./assets/hero.mp4" type="video/mp4">
       </video>
-      <img src="./assets/hero.jpg" alt="New BMW i3" class="hero__poster-fallback" aria-hidden="true">
       <div class="hero__overlay" aria-hidden="true"></div>
 
       <!-- Hero Bottom Content -->
@@ -539,11 +538,9 @@
       
       <!-- Banner 1: New BMW iX5 -->
       <article class="model-banner" aria-label="New BMW iX5">
-        <picture>
-          <source media="(max-width: 767px)" srcset="./assets/banner-ix5-square.webp">
-          <source media="(max-width: 1023px)" srcset="./assets/banner-ix5-tall.webp">
-          <img src="./assets/ix5.jpg" alt="New BMW iX5" class="model-banner__bg" loading="lazy" width="1024" height="340">
-        </picture>
+        <video class="model-banner__video" autoplay loop muted playsinline poster="./assets/ix5.jpg" aria-label="BMW iX5 feature video">
+          <source src="./assets/bmw-video-2.mp4" type="video/mp4">
+        </video>
         <div class="model-banner__overlay" aria-hidden="true"></div>
 
         <div class="model-banner__content">
@@ -577,7 +574,9 @@
 
       <!-- Banner 2: BMW X1 -->
       <article class="model-banner" aria-label="BMW X1">
-        <img src="./assets/x1.jpg" alt="BMW X1" class="model-banner__bg" loading="lazy" width="1024" height="340">
+        <video class="model-banner__video" autoplay loop muted playsinline poster="./assets/x1.jpg" aria-label="BMW X1 video">
+          <source src="./assets/bmw-video-1.mp4" type="video/mp4">
+        </video>
         <div class="model-banner__overlay" aria-hidden="true"></div>
 
         <div class="model-banner__content">
@@ -587,7 +586,7 @@
             <p class="model-banner__subtitle">M Sport trim, no down payment and maintenance included.</p>
             <div class="btn-group">
               <a href="https://www.bmw.fr/fr/tous-les-modeles.html" class="btn btn--primary" rel="noopener">Find yours</a>
-              <a href="https://www.bmw.fr/fr/plus-de-bmw/customer-support.html" class="btn btn--outline-light" rel="noopener">Request a quote</a>
+              <a href="https://www.bmw.fr/fr/plus-de-bmw/customer-support.html" class="btn btn--outline-light" data-video-src="./assets/bmw-video-1.mp4" data-video-title="BMW X1 Performance & Driving" rel="noopener">Request a quote</a>
             </div>
           </div>
 
@@ -612,7 +611,9 @@
 
       <!-- Banner 3: New BMW iX4 -->
       <article class="model-banner" aria-label="New BMW iX4">
-        <img src="./assets/ix4.jpg" alt="New BMW iX4" class="model-banner__bg" loading="lazy" width="1024" height="340">
+        <video class="model-banner__video" autoplay loop muted playsinline poster="./assets/ix4.jpg" aria-label="BMW iX4 design video">
+          <source src="./assets/bmw-video-3.mp4" type="video/mp4">
+        </video>
         <div class="model-banner__overlay" aria-hidden="true"></div>
 
         <!-- AI Sparkle Badge at Top-Right -->
