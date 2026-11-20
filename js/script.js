@@ -291,19 +291,37 @@ document.addEventListener('DOMContentLoaded', () => {
 
   chatCloseBtn?.addEventListener('click', closeChatPopover);
 
-  document.addEventListener('click', (e) => {
-    if (chatPopover && chatBtn && chatPopover.classList.contains('chat-popover--open')) {
-      if (!chatPopover.contains(e.target) && !chatBtn.contains(e.target)) {
-        closeChatPopover();
-      }
-    }
+  // =========================================================================
+  // 8. Category Filter Tabs (Models Showcase)
+  // =========================================================================
+  const categoryTabs = document.querySelectorAll('.category-tab');
+  const modelCards = document.querySelectorAll('.model-card');
+
+  categoryTabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      categoryTabs.forEach(t => {
+        t.classList.remove('category-tab--active');
+        t.setAttribute('aria-selected', 'false');
+      });
+      tab.classList.add('category-tab--active');
+      tab.setAttribute('aria-selected', 'true');
+
+      const selectedCategory = tab.getAttribute('data-category');
+
+      modelCards.forEach(card => {
+        const cardCategories = (card.getAttribute('data-category') || '').split(' ');
+        if (!selectedCategory || selectedCategory === 'all' || cardCategories.includes(selectedCategory)) {
+          card.style.display = 'flex';
+          card.style.animation = 'fade-in 0.3s ease-out forwards';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
   });
 
-});
-
-
   // =========================================================================
-  // 8. Video Modal Player
+  // 9. Video Modal Player
   // =========================================================================
   const videoModal = document.getElementById('video-modal');
   const videoModalPlayer = videoModal ? videoModal.querySelector('.video-modal__player') : null;
@@ -365,3 +383,5 @@ document.addEventListener('DOMContentLoaded', () => {
       closeVideoModal();
     }
   });
+
+});
